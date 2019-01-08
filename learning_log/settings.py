@@ -26,7 +26,6 @@ SECRET_KEY = '_n!#)1y2e0++xg$*hg9&bjxy%c+fi^+=j&))509i%y365d6mwn'
 DEBUG = False
 
 ALLOWED_HOSTS = ['192.168.0.253','localhost','127.0.0.1']
-STATIC_ROOT = os.path.join(BASE_DIR,'static/')
 
 # Application definition
 
@@ -61,7 +60,7 @@ ROOT_URLCONF = 'learning_log.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'users/template')],
+        'DIRS': [os.path.join(BASE_DIR,'learning_log/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
